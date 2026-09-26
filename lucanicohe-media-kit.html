@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>@lucanicohe — Media Kit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1d1d1f;
+    --gray:#86868b;
+    --line:#e5e5e5;
+    --bg:#ffffff;
+    --panel:#f5f5f7;
+    --accent:#0071e3;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+    -webkit-font-smoothing:antialiased;
+    line-height:1.5;
+  }
+  .wrap{max-width:680px;margin:0 auto;padding:0 24px;}
+
+  .hero{padding:96px 0 64px;text-align:center;}
+  .avatar{
+    width:160px;height:160px;margin:0 auto 32px;
+    clip-path:url(#squircle-avatar);
+  }
+  .avatar img{width:100%;height:100%;object-fit:cover;display:block;}
+  .hero h1{
+    font-size:48px;font-weight:600;letter-spacing:-0.02em;line-height:1.1;
+    margin-bottom:10px;
+  }
+  .hero .handle{font-size:19px;color:var(--accent);font-weight:500;margin-bottom:18px;}
+  .hero p{
+    font-size:19px;color:var(--gray);font-weight:400;max-width:38ch;
+    margin:0 auto;line-height:1.5;
+  }
+
+  section{padding:56px 0;border-top:1px solid var(--line);}
+  .eyebrow{
+    font-size:13px;font-weight:600;color:var(--gray);
+    text-align:center;margin-bottom:36px;
+  }
+
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;text-align:center;}
+  .stats .num{font-size:34px;font-weight:600;letter-spacing:-0.01em;}
+  .stats .label{font-size:13px;color:var(--gray);margin-top:6px;}
+  @media (max-width:600px){.stats{grid-template-columns:repeat(2,1fr);row-gap:32px;}}
+
+  .reel{
+    display:flex;justify-content:space-between;align-items:center;gap:16px;
+    padding:20px 0;border-top:1px solid var(--line);
+  }
+  .reel:first-child{border-top:none;padding-top:0;}
+  .reel-left{display:flex;align-items:center;gap:14px;}
+  .reel-thumb{
+    width:56px;height:56px;border-radius:10px;object-fit:cover;
+    background:var(--panel);flex-shrink:0;
+  }
+  .reel-desc{font-size:13px;font-weight:400;color:var(--gray);}
+  .reel-link{font-size:12px;color:var(--accent);margin-top:4px;}
+  .reel-link a{color:var(--accent);text-decoration:none;}
+  .reel-stats{text-align:right;white-space:nowrap;}
+  .reel-stats .views{display:block;font-size:26px;font-weight:600;color:var(--ink);letter-spacing:-0.01em;}
+  .reel-stats .likes{display:block;font-size:15px;color:var(--gray);margin-top:2px;}
+
+  .demo-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;}
+  .demo-title{font-size:13px;color:var(--gray);font-weight:600;margin-bottom:16px;}
+  .bar-row{display:flex;align-items:center;gap:12px;margin-bottom:12px;}
+  .bar-label{width:60px;flex-shrink:0;font-size:14px;}
+  .bar-track{flex:1;height:6px;background:var(--panel);border-radius:3px;overflow:hidden;}
+  .bar-fill{height:100%;background:var(--ink);border-radius:3px;}
+  .bar-pct{width:46px;text-align:right;font-size:14px;color:var(--gray);flex-shrink:0;}
+  @media (max-width:600px){.demo-grid{grid-template-columns:1fr;gap:32px;}}
+
+  .collab{display:flex;justify-content:space-between;padding:14px 0;border-top:1px solid var(--line);font-size:15px;}
+  .collab:first-child{border-top:none;padding-top:0;}
+  .collab span{color:var(--gray);}
+
+  .pill-group{margin-bottom:28px;}
+  .pill-group:last-child{margin-bottom:0;}
+  .pill-title{font-size:13px;color:var(--gray);font-weight:600;margin-bottom:12px;}
+  .pill-row{display:flex;flex-wrap:wrap;gap:8px;}
+  .pill{font-size:14px;padding:8px 16px;background:var(--panel);border-radius:20px;}
+
+  .contact{text-align:center;padding:64px 0 96px;}
+  .contact h2{font-size:32px;font-weight:600;letter-spacing:-0.01em;margin-bottom:12px;}
+  .contact p{color:var(--gray);font-size:17px;margin-bottom:28px;}
+  .btn{
+    display:inline-block;background:var(--accent);color:#fff;font-size:16px;font-weight:500;
+    padding:13px 28px;border-radius:24px;text-decoration:none;
+  }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute;"><defs><clipPath id="squircle-avatar" clipPathUnits="userSpaceOnUse"><path d="M 160.00,80.00 L 159.98,100.90 L 159.92,107.58 L 159.82,112.42 L 159.69,116.35 L 159.51,119.72 L 159.30,122.68 L 159.04,125.35 L 158.75,127.78 L 158.41,130.01 L 158.03,132.08 L 157.62,134.02 L 157.16,135.82 L 156.66,137.52 L 156.11,139.12 L 155.53,140.63 L 154.90,142.05 L 154.22,143.40 L 153.50,144.68 L 152.73,145.89 L 151.91,147.04 L 151.04,148.12 L 150.12,149.15 L 149.15,150.12 L 148.12,151.04 L 147.04,151.91 L 145.89,152.73 L 144.68,153.50 L 143.40,154.22 L 142.05,154.90 L 140.63,155.53 L 139.12,156.11 L 137.52,156.66 L 135.82,157.16 L 134.02,157.62 L 132.08,158.03 L 130.01,158.41 L 127.78,158.75 L 125.35,159.04 L 122.68,159.30 L 119.72,159.51 L 116.35,159.69 L 112.42,159.82 L 107.58,159.92 L 100.90,159.98 L 80.00,160.00 L 59.10,159.98 L 52.42,159.92 L 47.58,159.82 L 43.65,159.69 L 40.28,159.51 L 37.32,159.30 L 34.65,159.04 L 32.22,158.75 L 29.99,158.41 L 27.92,158.03 L 25.98,157.62 L 24.18,157.16 L 22.48,156.66 L 20.88,156.11 L 19.37,155.53 L 17.95,154.90 L 16.60,154.22 L 15.32,153.50 L 14.11,152.73 L 12.96,151.91 L 11.88,151.04 L 10.85,150.12 L 9.88,149.15 L 8.96,148.12 L 8.09,147.04 L 7.27,145.89 L 6.50,144.68 L 5.78,143.40 L 5.10,142.05 L 4.47,140.63 L 3.89,139.12 L 3.34,137.52 L 2.84,135.82 L 2.38,134.02 L 1.97,132.08 L 1.59,130.01 L 1.25,127.78 L 0.96,125.35 L 0.70,122.68 L 0.49,119.72 L 0.31,116.35 L 0.18,112.42 L 0.08,107.58 L 0.02,100.90 L 0.00,80.00 L 0.02,59.10 L 0.08,52.42 L 0.18,47.58 L 0.31,43.65 L 0.49,40.28 L 0.70,37.32 L 0.96,34.65 L 1.25,32.22 L 1.59,29.99 L 1.97,27.92 L 2.38,25.98 L 2.84,24.18 L 3.34,22.48 L 3.89,20.88 L 4.47,19.37 L 5.10,17.95 L 5.78,16.60 L 6.50,15.32 L 7.27,14.11 L 8.09,12.96 L 8.96,11.88 L 9.88,10.85 L 10.85,9.88 L 11.88,8.96 L 12.96,8.09 L 14.11,7.27 L 15.32,6.50 L 16.60,5.78 L 17.95,5.10 L 19.37,4.47 L 20.88,3.89 L 22.48,3.34 L 24.18,2.84 L 25.98,2.38 L 27.92,1.97 L 29.99,1.59 L 32.22,1.25 L 34.65,0.96 L 37.32,0.70 L 40.28,0.49 L 43.65,0.31 L 47.58,0.18 L 52.42,0.08 L 59.10,0.02 L 80.00,0.00 L 100.90,0.02 L 107.58,0.08 L 112.42,0.18 L 116.35,0.31 L 119.72,0.49 L 122.68,0.70 L 125.35,0.96 L 127.78,1.25 L 130.01,1.59 L 132.08,1.97 L 134.02,2.38 L 135.82,2.84 L 137.52,3.34 L 139.12,3.89 L 140.63,4.47 L 142.05,5.10 L 143.40,5.78 L 144.68,6.50 L 145.89,7.27 L 147.04,8.09 L 148.12,8.96 L 149.15,9.88 L 150.12,10.85 L 151.04,11.88 L 151.91,12.96 L 152.73,14.11 L 153.50,15.32 L 154.22,16.60 L 154.90,17.95 L 155.53,19.37 L 156.11,20.88 L 156.66,22.48 L 157.16,24.18 L 157.62,25.98 L 158.03,27.92 L 158.41,29.99 L 158.75,32.22 L 159.04,34.65 L 159.30,37.32 L 159.51,40.28 L 159.69,43.65 L 159.82,47.58 L 159.92,52.42 L 159.98,59.10 L 160.00,80.00 Z"/></clipPath></defs></svg><div class="wrap">
+
+  <div class="hero">
+    <div class="avatar"><img src="me1.jpg" alt="Luca Helgert"></div>
+    <h1>Luca Helgert</h1>
+    <div class="handle">@lucanicohe</div>
+    <p>Cinematic, on-location content capturing real, everyday life in Japan through a German lens.</p>
+  </div>
+
+  <section>
+    <div class="eyebrow">AT A GLANCE</div>
+    <div class="stats">
+      <div><div class="num">3,273</div><div class="label">Followers</div></div>
+      <div><div class="num">6.5%</div><div class="label">Engagement rate</div></div>
+      <div><div class="num">7,116</div><div class="label">Avg. reel views</div></div>
+      <div><div class="num">7.56M</div><div class="label">Total views, last 50 posts</div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">TOP PERFORMERS</div>
+    <div class="reel">
+      <div class="reel-left">
+        <img class="reel-thumb" src="reel1.jpg" alt="">
+        <div>
+          <div class="reel-desc">Romanticizing Germany like Japan</div>
+          <div class="reel-link"><a href="https://www.instagram.com/reel/Db6CWMOMd9u/">View reel ↗</a></div>
+        </div>
+      </div>
+      <div class="reel-stats"><span class="views">4.21M</span><span class="likes">261.7K likes</span></div>
+    </div>
+    <div class="reel">
+      <div class="reel-left">
+        <img class="reel-thumb" src="reel2.jpg" alt="">
+        <div>
+          <div class="reel-desc">Romanticizing Germany like Japan</div>
+          <div class="reel-link"><a href="https://www.instagram.com/reel/DcCy8ryJ-AA/">View reel ↗</a></div>
+        </div>
+      </div>
+      <div class="reel-stats"><span class="views">2.72M</span><span class="likes">186.6K likes</span></div>
+    </div>
+    <div class="reel">
+      <div class="reel-left">
+        <img class="reel-thumb" src="reel3.jpg" alt="">
+        <div>
+          <div class="reel-desc">Romanticizing Germany like Japan</div>
+          <div class="reel-link"><a href="https://www.instagram.com/reel/DcIVuWKJQoj/">View reel ↗</a></div>
+        </div>
+      </div>
+      <div class="reel-stats"><span class="views">264.8K</span><span class="likes">16.3K likes</span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">AUDIENCE</div>
+    <div class="demo-grid">
+      <div>
+        <div class="demo-title">GENDER</div>
+        <div class="bar-row"><div class="bar-label">Men</div><div class="bar-track"><div class="bar-fill" style="width:68.1%;"></div></div><div class="bar-pct">68.1%</div></div>
+        <div class="bar-row"><div class="bar-label">Women</div><div class="bar-track"><div class="bar-fill" style="width:31.9%;"></div></div><div class="bar-pct">31.9%</div></div>
+        <div class="demo-title" style="margin-top:24px;">AGE</div>
+        <div class="bar-row"><div class="bar-label">25–34</div><div class="bar-track"><div class="bar-fill" style="width:47.9%;"></div></div><div class="bar-pct">47.9%</div></div>
+        <div class="bar-row"><div class="bar-label">18–24</div><div class="bar-track"><div class="bar-fill" style="width:25.7%;"></div></div><div class="bar-pct">25.7%</div></div>
+        <div class="bar-row"><div class="bar-label">35–44</div><div class="bar-track"><div class="bar-fill" style="width:18.4%;"></div></div><div class="bar-pct">18.4%</div></div>
+      </div>
+      <div>
+        <div class="demo-title">TOP COUNTRIES</div>
+        <div class="bar-row"><div class="bar-label">Germany</div><div class="bar-track"><div class="bar-fill" style="width:24.9%;"></div></div><div class="bar-pct">24.9%</div></div>
+        <div class="bar-row"><div class="bar-label">India</div><div class="bar-track"><div class="bar-fill" style="width:14%;"></div></div><div class="bar-pct">14.0%</div></div>
+        <div class="bar-row"><div class="bar-label">Japan</div><div class="bar-track"><div class="bar-fill" style="width:8%;"></div></div><div class="bar-pct">8.0%</div></div>
+        <div class="bar-row"><div class="bar-label">USA</div><div class="bar-track"><div class="bar-fill" style="width:6.1%;"></div></div><div class="bar-pct">6.1%</div></div>
+        <div class="bar-row"><div class="bar-label">Italy</div><div class="bar-track"><div class="bar-fill" style="width:2.8%;"></div></div><div class="bar-pct">2.8%</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">GROWTH</div>
+    <div class="stats" style="grid-template-columns:repeat(2,1fr);">
+      <div><div class="num">+2,334</div><div class="label">Followers, last 90 days</div></div>
+      <div><div class="num">170,786</div><div class="label">Views, last 28 days</div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">PAST COLLABORATIONS</div>
+    <div class="collab"><div>Konbini Cut</div><span>Convenience-store photo printer</span></div>
+    <div class="collab"><div>Chopsticks Studio</div><span>DIY chopstick workshop</span></div>
+    <div class="collab"><div>Hanamizuki Tokyo</div><span>Traditional tea ceremony</span></div>
+    <div class="collab"><div>Akabane Kappo Omochi</div><span>Restaurant feature, 2 videos</span></div>
+  </section>
+
+  <section>
+    <div class="eyebrow">SERVICES</div>
+    <div class="pill-group">
+      <div class="pill-title">DELIVERABLES</div>
+      <div class="pill-row">
+        <span class="pill">In-feed reel</span>
+        <span class="pill">Story set</span>
+        <span class="pill">On-location filming</span>
+        <span class="pill">Japanese, German, English narration</span>
+      </div>
+    </div>
+    <div class="pill-group">
+      <div class="pill-title">FORMATS</div>
+      <div class="pill-row">
+        <span class="pill">Single sponsored reel</span>
+        <span class="pill">Reel + story bundle</span>
+        <span class="pill">Ongoing series</span>
+        <span class="pill">On-site review</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="contact">
+    <h2>Let's work together</h2>
+    <p>Open to brand partnerships and collaborations in Japan.</p>
+    <a class="btn" href="https://www.instagram.com/lucanicohe">Message on Instagram</a>
+  </div>
+
+</div>
+</body>
+</html>
